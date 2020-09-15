@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src\\test\\resources\\Features",glue="org.stepdefinition",tags= {"@Exe2"},
-plugin= {"json:target/cucumber-reports/CucumberTestReport.json","html:target"})
+plugin= {"json:target/CucumberTestReport.json","html:target"})
 public class TestRunner {
 	@AfterClass
 	public static void closeBrow() throws IOException
