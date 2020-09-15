@@ -10,8 +10,8 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src\\test\\resources\\Features",glue="org.stepdefinition",tags= {"@Exe2 or @Exe1 or @Smoke"},
-plugin="json:G:\\eclipse works\\AdactinApp\\target\\jen.json")
+@CucumberOptions(features="src\\test\\resources\\Features",glue="org.stepdefinition",tags= {"@Exe2"},
+plugin= {"json:G:\\eclipse works\\AdactinApp\\target\\jen1.json","html:G:\\eclipse works\\AdactinApp\\target"})
 public class TestRunner {
 	@AfterClass
 	public static void closeBrow() throws IOException
